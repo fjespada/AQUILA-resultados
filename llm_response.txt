@@ -1,0 +1,15 @@
+Summary of Architecture and Code:
+
+The proposed CPU-QPU heterogeneous architecture consists of a classical host managing control flow and a quantum processor executing Variational Quantum Circuits (VQC). The low-latency interconnect enables seamless communication between the two components.
+
+Architectural Decisions:
+1. Hybrid Approach: By combining both classical and quantum computing, the system leverages the strengths of each paradigm to achieve improved performance and efficiency.
+2. Control Flow Management: The classical host is responsible for managing control flow, ensuring that the quantum processor executes the correct sequence of operations.
+
+Code Pattern:
+The VQC execution on the quantum processor can be seen as a specific implementation of the Quantum Circuit Model (QCM). The QCM employs a set of quantum gates and measurement operators to represent the quantum program. The classical host's role is to provide the input data, initialize the quantum circuit, and manage the control flow.
+
+Employed Patterns:
+1. Quantum Circuit Model: The VQC execution follows the principles of the Quantum Circuit Model, which is a fundamental framework for designing and implementing quantum algorithms.
+2. Hybrid Programming Paradigm: By combining classical and quantum programming paradigms, the system employs a hybrid programming approach that allows developers to leverage the strengths of both paradigms.
+3. Low-Latency Interconnect: The use of a low-latency interconnect enables efficient communication between the classical host and quantum processor, ensuring seamless execution of the VQC.

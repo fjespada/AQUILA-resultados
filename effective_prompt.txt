@@ -1,0 +1,1 @@
+Can you explain the given hybrid architecture: A CPU-QPU heterogeneous architecture where the classical host manages control flow and the quantum processor executes Variational Quantum Circuits (VQC) via a low-latency Interconnect?
