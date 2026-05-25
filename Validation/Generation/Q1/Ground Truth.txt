@@ -1,0 +1,11 @@
+In a hybrid quantum-classical software architecture, the classical computing layer acts as the orchestrator and integrator for the quantum processor (QPU), particularly under current NISQ constraints. Its primary roles and responsibilities are:
+
+    Control Flow and Iterative Execution: The classical layer manages the overall control flow of the application. For Variational Quantum Algorithms (VQAs) like VQE and QAOA, it dictates the iterative feedback loop, updating parameterized quantum circuits based on continuous classical optimization.
+
+    Pre-processing (State Preparation): It handles the translation and encoding of classical data into quantum states before execution, preparing the circuits for the QPU.
+
+    Post-processing and Error Mitigation: It systematically receives raw measurement distributions from the QPU and applies classical post-processing steps, most notably Readout Error Mitigation, to correct hardware noise before passing the data to the user.
+
+    System Integration (Hybrid Module & Interfaces): It packages the quantum and classical logic together into a Hybrid Module. Through a Classical-Quantum Interface, it exposes the quantum functionalities as decoupled, scalable services (e.g., via APIs) so classical domain applications can consume them without understanding the underlying quantum mechanics.
+
+    Deployment Orchestration: It is responsible for executing within a Hybrid Runtime (e.g., Qiskit Runtime or AWS Braket) or a distributed deployment model to minimize network queuing times and latency between the CPU and QPU.

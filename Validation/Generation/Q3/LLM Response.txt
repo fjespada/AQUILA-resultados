@@ -1,0 +1,15 @@
+Traditional modular design can be challenging to apply to quantum software for several reasons:
+
+Non-determinism: Quantum systems are inherently non-deterministic, meaning that small changes in initial conditions or parameters can lead to drastically different outcomes. Traditional modular design relies on determinism, making it difficult to scale to complex quantum algorithms.
+
+Interconnectedness: Quantum systems often involve complex interactions between multiple qubits, which makes it challenging to decompose the system into separate modules. This interconnectedness requires a more holistic approach to design.
+
+Sensitivity to noise and error correction: Quantum systems are extremely sensitive to noise and errors, which can be catastrophic for quantum computations. Traditional modular design often overlooks the importance of robustness against noise and errors.
+
+Excessive abstraction in quantum software design can lead to several problems:
+
+Loss of physical meaning: Over-abstraction can strip away the physical meaning behind the algorithms, making it difficult to interpret and understand the results.
+
+Inability to optimize: Abstraction can make it challenging to optimize the algorithm for specific hardware or use cases, as the optimized solution may not be directly applicable to the physical system.
+
+Difficulty in error correction: Excessive abstraction can obscure the underlying physics of the system, making it harder to implement effective error correction mechanisms. 

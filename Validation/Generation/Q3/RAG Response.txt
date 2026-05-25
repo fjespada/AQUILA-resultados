@@ -1,0 +1,15 @@
+Traditional modular design may fail in quantum software because it is based on assumptions that align with the semantics of deterministic computation, whereas quantum programs operate under fundamentally different rules governed by quantum mechanics. The failure cases of naive abstraction in quantum software can be summarized as follows:
+
+1. Violation of Unitarity: In classical programming, subroutines can encapsulate arbitrary computations. However, in quantum computing, unless measurement is involved, every operation must preserve the unitary nature of the quantum state.
+
+In this case, traditional modular design may fail because it does not account for the fundamental requirement of unitarity preservation in quantum operations. This can lead to physically invalid or semantically incorrect behavior.
+
+2. Entanglement Boundaries: In classical programming, data manipulation and control flow are decoupled from each other. However, in quantum computing, entanglement is a fundamental property that cannot be ignored. Traditional modular design may fail because it does not account for the entanglement boundaries between different modules or components.
+
+This can lead to physically invalid or semantically incorrect behavior, as entanglement effects are not properly taken into account.
+
+3. Measurement Side Effects: In classical programming, function calls do not have side effects that affect the global state of the program. However, in quantum computing, measurement has a profound impact on the global state of the system. Traditional modular design may fail because it does not account for the measurement side effects that can propagate across different modules or components.
+
+This can lead to physically invalid or semantically incorrect behavior, as the measurement effects are not properly taken into account.
+
+In summary, traditional modular design may fail in quantum software because it is based on assumptions that do not account for the fundamental differences between classical and quantum mechanics. To overcome these limitations, a physically sound notion of abstraction must be developed, taking into account the semantics of quantum mechanics. 

@@ -1,0 +1,45 @@
+Here's a simple example of how to integrate error mitigation strategies (in this case, Quantum Error Correction Code (QECC)) into an existing algorithm without altering its underlying core logic:
+
+Algorithm: Simulating a quantum gate with a single-qubit Pauli-X rotation
+
+Original Algorithm:
+-Initialize qubit state |0
+-Apply Pauli-X rotation (e.g., π/4) to the qubit using U_X(π/4)
+-Measure the qubit's state
+
+Error Mitigation Strategy:
+
+To mitigate errors, we will apply a Quantum Error Correction Code (QECC) to the algorithm. We'll use the Repeated-Error-Correction (REC) code.
+-Initialize two copies of the original qubit (|0 and |1)
+-Apply Pauli-X rotation (e.g., π/4) to both copies using U_X(π/4)
+-Measure the states of both copies
+-Use classical post-processing to correct errors
+
+def apply_quantum_gate(qubit, angle):
+    # Apply Pauli-X rotation (e.g., π/4) using U_X(angle)
+    return np.exp(-1j * angle / 2) * qubit
+
+def measure_qubit(qubit):
+    # Measure the state of the qubit
+    return np.random.choice([0, 1]) * qubit
+
+def correct_errors(measured_states):
+    # Classically post-process errors using Repeated-Error-Correction (REC)
+    # For simplicity, we'll just flip errors for this example
+    corrected_state = np.where(measured_states == 0, 0, 1)
+    return corrected_state
+
+qubit_0 = np.array([1]) / np.sqrt(2)
+qubit_1 = np.array([0]) / np.sqrt(2)
+
+# Apply Pauli-X rotation (e.g., π/4) to both copies using U_X(angle)
+angle = np.pi / 4
+appled_qubit_0 = apply_quantum_gate(qubit_0, angle)
+appled_qubit_1 = apply_quantum_gate(qubit_1, angle)
+
+# Measure the states of both copies
+measured_states_0 = measure_qubit(appled_qubit_0)
+measured_states_1 = measure_qubit(appled_qubit_1)
+
+# Use classical post-processing to correct errors
+corrected_state = correct_errors([measured_states_0, measured_states_1])

@@ -1,0 +1,14 @@
+The primary challenges in deploying hybrid quantum-classical applications are:
+
+1. **Quantum-Classic Integration**: Seamlessly integrating classical and quantum components, considering hardware noise, network latency, and queueing times.
+2. **Quantum Algorithm Implementation**: Developing quantum parts requires expert knowledge of quantum computing and its mathematical foundations, making it challenging to integrate with classical parts.
+3. **Testing and Validation**: Testing hybrid applications involves testing both classical programs and quantum circuits, which can be complex and time-consuming.
+
+Recommended solutions:
+
+1. **Decompose Problems**: Break down problems into multiple sub-problems that can be solved by classical or quantum solvers, allowing for a more manageable integration process.
+2. **Semi-Automated Solver Construction**: Utilize techniques to semi-automatically build the best solver for a given problem, reducing manual effort and increasing efficiency.
+3. **Quantum Application Archive**: Implement an archive that stores test specifications for hybrid applications, enabling integration and deployment tests in the target environment.
+4. **Classical-Quantum Interface Testing**: Test each interface separately to ensure proper functioning of the hybrid application.
+
+To mitigate these challenges, consider implementing a framework that can model, analyze, and optimize various levels of quantum computing hardware and software, such as QADL. This will help in addressing the limitations of existing ADLs in handling quantum-specific phenomena.

@@ -1,0 +1,38 @@
+To integrate error mitigation strategies without altering the underlying core logic of a quantum algorithm, the architecture must implement the Reliability Decorator Design Pattern.
+
+Architecturally, this pattern strictly separates the pure mathematical quantum logic from the NISQ-specific hardware noise compensation. The core algorithm remains pristine and hardware-agnostic, while a classical Decorator intercepts the execution flow to dynamically inject mitigation strategies (such as Gate Error Mitigation or Readout Error calibration) and adjust parameters like shot_number.
+Below is a conceptual implementation demonstrating this logical partition in a classical-quantum hybrid pipeline:
+Python
+
+# 1. Core Logic (Agnostic to hardware noise)
+class PureQuantumAlgorithm:
+    def execute(self, circuit):
+        # In a naive implementation, this would run directly on the QPU.
+        # Here, it just expects a clean result.
+        return backend.run(circuit).get_counts()
+
+# 2. The Reliability Decorator (Classical Post/Pre-processing)
+class ErrorMitigationDecorator:
+    def __init__(self, quantum_algorithm, mitigation_strategy):
+        self._algorithm = quantum_algorithm
+        self._strategy = mitigation_strategy
+
+    def execute(self, circuit, shot_number=1000):
+        # A. Pre-processing: Decorator intercepts and modifies execution parameters
+        modified_circuit = self._strategy.apply_gate_folding(circuit)
+        
+        # B. QPU Execution: Delegate to the core logic/backend
+        raw_noisy_counts = self._algorithm.execute(modified_circuit, shots=shot_number)
+        
+        # C. Post-processing: Classical error mitigation before returning
+        mitigated_results = self._strategy.apply_readout_calibration(raw_noisy_counts)
+        
+        return mitigated_results
+
+# 3. Usage: Dynamic injection without altering core logic
+core_algo = PureQuantumAlgorithm()
+mitigated_algo = ErrorMitigationDecorator(core_algo, mitigation_strategy=ZeroNoiseExtrapolation())
+
+final_result = mitigated_algo.execute(my_vqe_circuit)
+
+By utilizing this classical wrapper, the architecture achieves high modularity and adaptability, enabling researchers to swap or update error mitigation filters dynamically without rewriting the core quantum application.

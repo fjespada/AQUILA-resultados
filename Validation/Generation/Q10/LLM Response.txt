@@ -1,0 +1,14 @@
+For a distributed classical software architecture, a desirable hybrid execution architecture for quantum functionalities that require deploying Readout Error Mitigation (REM) can be designed as follows:
+
+Hybrid Execution Architecture:
+
+Classical-Quantum Hybrid: Divide the entire system into two parts:
+Classical part: handles data processing, task scheduling, and communication between nodes.
+Quantum part: contains the quantum computing resources and executes the quantum functionalities.
+Distributed Quantum Computing Nodes (QCNs): Deploy QCNs in a distributed manner across different locations, each equipped with their own quantum computing resources and connectivity to the classical network.
+Quantum Compute Cluster: Create a cluster of QCNs that work together to execute quantum computations. This cluster can be managed by a central classical node or a distributed architecture using techniques like leader-follower or consensus algorithms.
+Readout Error Mitigation (REM) Deployment:
+
+Distributed REM Systems: Deploy multiple REM systems across different nodes, each responsible for mitigating errors on its local qubit set.
+Node-level Error Correction: Implement node-level error correction mechanisms, such as dynamic decoupling or pulse shaping, to correct errors that occur during readout operations.
+Inter-node Communication: Establish communication between nodes to share measurements and correct errors in a decentralized manner.

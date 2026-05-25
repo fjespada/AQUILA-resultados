@@ -1,0 +1,15 @@
+The primary roles and responsibilities of the classical computing layer in a hybrid quantum-classical system are:
+
+
+1. **Control Flow**: The classical part of the algorithm is responsible for controlling the flow of the computation, including decision-making, looping, and conditional statements.
+
+2. **Pre- and Post-processing**: Classical computing handles tasks such as data preparation, input processing, and output formatting, which are essential for quantum algorithms like VQAs (Variational Quantum Algorithms).
+
+3. **Quantum Algorithm Integration**: The classical layer integrates the quantum algorithm into a hybrid runtime that can execute both classical and quantum parts of the code.
+
+4. **Data Storage**: Classical computers store data required by the quantum algorithm, such as input states or intermediate results.
+
+5. **Interface Implementation**: A dedicated interface is required to enable the integration of the quantum algorithm into applications, allowing for seamless communication between the classical and quantum components.
+
+
+In a hybrid quantum-classical system, the classical computing layer plays a crucial role in coordinating the interaction between the quantum processor (QPU) and the classical hardware (CPU/Cloud). 

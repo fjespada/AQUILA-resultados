@@ -1,0 +1,35 @@
+Proposal for an Improved Architecture {A'H} Free of Architecture Smells:
+
+**Architecture Overview**
+The proposed architecture, {A'H}, is a hybrid quantum-classical system that integrates structural approaches and optimization tools to eliminate potential problems (architecture smells) in generating inefficient circuits exceeding the hardware's coherence limits.
+
+**Classical Responsibilities**
+
+1. **Compilation Stage**: A classical compiler, Qompiler, takes the unitary matrix U as input and decomposes it into gate-level circuits expressed using an intermediate language (IL). This stage is responsible for:
+	* Decomposing quantum circuits into basis gates.
+	* Optimizing circuit depth by combining or eliminating gates.
+2. **Interpretation Stage**: The classical interpreter, Interpreters, maps IL circuits into native gates for the targeted platforms such as Qiskit, Cirq, or others.
+
+**Quantum Responsibilities**
+
+1. **Quantum Circuit Generation**: A quantum circuit generator takes the optimized IL circuits and generates the corresponding quantum circuits.
+2. **Quantum Execution**: The generated quantum circuits are executed on the target quantum device.
+
+**Architecture Smells Elimination**
+
+To eliminate architecture smells, {A'H} incorporates the following design principles:
+
+1. **Separation of Concerns**: Classical compilation and interpretation stages are decoupled from platform-specific dependencies, ensuring cross-platform portability.
+2. **Modular Development**: The architecture is designed to facilitate modular development by separating classical and quantum responsibilities.
+3. **Optimization**: The optimization stage focuses on decomposing quantum circuits into basis gates and optimizing circuit depth.
+
+**Refactoring/Repair Process**
+
+To refactor or repair the existing architecture, follow these steps:
+
+1. **Identify Architecture Smells**: Analyze the existing architecture to identify potential problems (architecture smells) such as inefficient circuit generation.
+2. **Apply Structural Approaches**: Apply structural approaches such as separation of concerns and modular development to eliminate architecture smells.
+3. **Integrate Optimization Tools**: Integrate optimization tools and techniques, such as gate-level circuit decomposition and optimization, to improve the efficiency of quantum circuit generation.
+4. **Test and Validate**: Test and validate the refactored or repaired architecture to ensure it meets the required quality concerns, such as maintainability, scalability, and security.
+
+By following this proposal, {A'H} can eliminate potential problems (architecture smells) in generating inefficient circuits exceeding the hardware's coherence limits, ensuring a more robust and extensible hybrid quantum-classical system design.

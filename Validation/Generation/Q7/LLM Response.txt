@@ -1,0 +1,15 @@
+In light of the severe noise constraints and limited qubit resources of current NISQ (Noisy Intermediate-Scale Quantum) hardware, it is crucial to adopt architectural patterns and algorithmic design strategies that prioritize reliability in a quantum module. Here are some justifications for these approaches:
+
+Quantum Error Correction (QEC): Implementing QEC techniques is essential to mitigate the effects of noise on qubit operations. This can be achieved through various methods, such as surface codes, concatenated codes, or fault-tolerant quantum computing architectures.
+
+Noise-resilient algorithms: Design algorithms that are robust against noise and errors caused by qubit fluctuations. Examples include quantum error correction algorithms like Shor's algorithm and quantum teleportation protocols.
+
+Fault-tolerant quantum computing architectures: Develop architectures that can tolerate faults and errors, such as topological quantum computers or superconducting qubits with built-in error correction mechanisms.
+
+Qubit resource optimization: Optimize the number of qubits used in a quantum module to minimize noise-induced errors while maintaining performance. This can be achieved through techniques like qubit merging or using fewer qubits for specific operations.
+
+Error correction circuits: Incorporate error correction circuits that detect and correct errors caused by qubit fluctuations. These circuits should be designed to operate with minimal resource overhead.
+
+Fault-tolerant quantum gates: Implement fault-tolerant quantum gates that can correct errors caused by qubit fluctuations during gate operations. This ensures reliable execution of quantum algorithms.
+
+Quantum redundancy: Utilize quantum redundancy techniques, such as redundant qubits or quantum error correction codes, to detect and correct errors caused by qubit fluctuations.

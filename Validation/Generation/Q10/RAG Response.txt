@@ -1,0 +1,14 @@
+To deploy Readout Error Mitigation (REM) functionalities that require hybrid quantum-classical execution, we recommend a pre-deployment strategy for the quantum circuit with its pre- and post-processing steps on either:
+
+1. A single quantum offering that supports execution of both quantum and classical parts.
+2. A specific combination of quantum and cloud offerings that fulfills the given deployment requirements.
+
+This approach enables developers to package quantum applications with necessary libraries and dependencies, ensuring seamless execution on any platform that supports containers. Containerization decisions were found in 0.47% of architecture decisions collected.
+
+For distributed deployment scenarios, various cloud offerings can be employed for classical tasks. We recommend using Qiskit Runtime [Qiskit, 2023a] or Amazon Braket Hybrid Jobs [AWS, 2023], which offer hybrid execution environments that enable deploying quantum applications packaged as Python files with JSON metadata files and subsequently executing them via publicly available HTTP endpoints.
+
+In Step 1, the quantum and classical parts are deployed according to deployment preferences. The subsequent execution and fetching of results shown in Steps 2&3 can be done independently by developers or client applications.
+
+To ensure NISQ feasibility, we must consider current constraints such as network latency, hardware noise, and queueing times when designing the hybrid execution architecture for REM functionalities.
+
+In summary, pre-deploying the quantum circuit with its pre- and post-processing steps on a single quantum offering or a specific combination of quantum and cloud offerings is the desirable hybrid execution architecture for deploying Readout Error Mitigation (REM) functionalities that require custom deployment requirements.

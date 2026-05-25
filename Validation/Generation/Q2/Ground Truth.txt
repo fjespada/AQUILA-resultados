@@ -1,0 +1,20 @@
+{A'H} is a hybrid architecture designed to eliminate "Circuit Overgrowth" by ensuring quantum tasks remain within the hardware's physical coherence limits (T1​/T2​).
+
+Classical Responsibilities
+    Qompiler (Compilation): Decomposes unitaries into Intermediate Language (IL) using Circuit Cutting to partition large circuits into shallower, executable sub-circuits.
+    Interpreters (Mapping): Maps IL to native gates using topology-aware routing to minimize noise-inducing SWAP operations.
+
+Quantum Responsibilities
+    Execution: Runs optimized circuits on the QPU and monitors fidelity.
+
+Architecture Smells Elimination
+    Hardware Blindness: Mitigated by integrating QPU calibration data (error rates) into the transpilation flow.
+    Coherence Overrun: Solved by enforcing strict depth limits based on the hardware’s decoherence window.
+
+Refactoring Process
+
+    Identify: Detect circuits exceeding the T1​/T2​ time budget.
+    Partition: Apply Circuit Cutting to break down monolithic blocks.
+    Optimize: Use gate-level fusion to reduce total execution time.
+    Validate: Ensure the final circuit depth is compatible with the target device’s fidelity.
+work queuing times and latency between the CPU and QPU.

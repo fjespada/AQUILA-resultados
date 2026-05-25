@@ -1,0 +1,5 @@
+Traditional modular design struggles in quantum software engineering because classical abstraction relies on deterministic computation, isolated memory, and side-effect-free execution. These assumptions clash with the fundamental physics governing quantum processors.
+
+Specifically, naive abstraction fails to account for three quantum mechanics principles: First, it ignores unitarity, assuming data can be arbitrarily copied or deleted, which leads to physically invalid, non-reversible operations. Second, it assumes strict decoupling of modules, failing to manage entanglement boundaries where altering one component non-locally affects another. Third, it overlooks the irreversible nature of measurement, treating it as a standard function return rather than an operation that permanently collapses the global quantum state.
+
+Ultimately, excessive abstraction decouples the software from the hardware reality. It obscures the underlying physics, resulting in semantically incorrect programs that either fail to execute on physical QPUs or inadvertently destroy quantum properties (like superposition) required for computational advantage.

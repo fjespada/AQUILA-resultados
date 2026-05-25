@@ -1,0 +1,62 @@
+Question 1: What are the primary roles and responsibilities of the classical computing layer in a hybrid quantum-classical system
+Expected ids:   ['a916bddb-7121-41d7-ad51-32fac41c03bc', '3794f2c2-e0df-496f-8a89-5f02877e1c87', '1b12055c-b8d1-4dbb-9802-ffc66db43a3c', 'bacd60e5-b833-4755-8bd9-3beb53db5181']
+Retrieved ids: ['a916bddb-7121-41d7-ad51-32fac41c03bc', '5cb995d4-628f-485e-b1f7-25f04bd60bb2', '1b12055c-b8d1-4dbb-9802-ffc66db43a3c', 'bacd60e5-b833-4755-8bd9-3beb53db5181', '3794f2c2-e0df-496f-8a89-5f02877e1c87']
+Precision Score: 0.8000
+Recall Score: 1.0000
+------------------------------------------------------------
+Question 2: Given a hybrid architecture that generates inefficient circuits exceeding the hardware's coherence limits, how can it be redesigned/refactored to eliminate potential problems (architecture smells) by integrating structural approaches and optimization tools?
+Expected ids:   ['2849a84c-5a54-4759-82a3-959abf0926fb', '663aaeb3-781c-4aac-819a-95df3a2d82fb', '211d8cbd-e383-49d5-b017-e84c38a2b038', '7574acd4-a8be-47d7-9362-76361fb2bb00']
+Retrieved ids: ['55865698-4788-44a7-990b-b892288eefb3', '2849a84c-5a54-4759-82a3-959abf0926fb', '211d8cbd-e383-49d5-b017-e84c38a2b038', 'a443f6ff-12a0-4801-b93c-0586810b3011', '663aaeb3-781c-4aac-819a-95df3a2d82fb']
+Precision Score: 0.6000
+Recall Score: 0.7500
+------------------------------------------------------------
+Question 3: Why might traditional modular design fail in quantum software, and how does excessive abstraction affect the physics of the system?
+Expected ids:   ['39556097-eae2-40f1-817a-8e98fbdf6eb5', 'f7b6df5b-1a8c-4fe8-b895-0b5f6be194f6', '551aa690-f4da-47cb-b7a0-22b8f9bfdabc', 'ce248d52-6578-4afe-9fea-94e038e6a2b9', 'f0dfd859-caa1-4f54-a576-a9b4504d927f']
+Retrieved ids: ['39556097-eae2-40f1-817a-8e98fbdf6eb5', 'ce248d52-6578-4afe-9fea-94e038e6a2b9', 'a7759937-2355-4508-b6ef-9a58d2bfa76d', 'f0dfd859-caa1-4f54-a576-a9b4504d927f', '551aa690-f4da-47cb-b7a0-22b8f9bfdabc']
+Precision Score: 0.8000
+Recall Score: 0.8000
+------------------------------------------------------------
+Question 4: What are the primary challenges and recommended solutions for deploying hybrid quantum-classical applications?
+Expected ids:   ['0477fc52-2476-41ff-941b-9af7388cab7e', '63b8d9bb-3a16-493d-945d-7b13349e12a5', '941f0086-63f1-4430-bc50-b5d47b0d95b8', 'b48177c2-3116-4faf-9e20-6ce960bca2ad', 'bacd60e5-b833-4755-8bd9-3beb53db5181']
+Retrieved ids: ['941f0086-63f1-4430-bc50-b5d47b0d95b8', '963fa391-34ea-459b-90b1-4fb84aef8084', 'bacd60e5-b833-4755-8bd9-3beb53db5181', '0477fc52-2476-41ff-941b-9af7388cab7e', '63b8d9bb-3a16-493d-945d-7b13349e12a5']
+Precision Score: 0.8000
+Recall Score: 0.8000
+------------------------------------------------------------
+Question 5: To integrate a complex quantum feature into a classical architecture, can Meta-Solving be used to decompose the problem into subproblems and decide whether to solve them classically or quantumly.
+Expected ids:   ['941f0086-63f1-4430-bc50-b5d47b0d95b8', 'bad7b55e-6c79-486a-8c58-394d4cc5ccc7', '3794f2c2-e0df-496f-8a89-5f02877e1c87', 'b48177c2-3116-4faf-9e20-6ce960bca2ad', 'e29d39bd-67aa-42e2-8aaa-d7ebd8498343']
+Retrieved ids: ['941f0086-63f1-4430-bc50-b5d47b0d95b8', '3794f2c2-e0df-496f-8a89-5f02877e1c87', 'e29d39bd-67aa-42e2-8aaa-d7ebd8498343', 'bad7b55e-6c79-486a-8c58-394d4cc5ccc7', 'b48177c2-3116-4faf-9e20-6ce960bca2ad']
+Precision Score: 1.0000
+Recall Score: 1.0000
+------------------------------------------------------------
+Question 6: Demonstrate how to integrate error mitigation strategies into the algorithms without altering their underlying core logic.
+Expected ids:   ['46cb230d-b368-452c-a8d3-4c41bd65c0af', '624fb425-3d0a-4d50-9d51-56b9ca51f87f', '16a3341e-19f7-40b7-a0f4-6188eac70849', 'a21eaea8-bc12-4f39-bdd4-58afa6c08fe3']
+Retrieved ids: ['a2da8025-21e6-4d0d-8e17-f2dd6e5f5737', '899f938c-cbc2-4ac8-89a5-9ade70bdbbf4', '624fb425-3d0a-4d50-9d51-56b9ca51f87f', '16a3341e-19f7-40b7-a0f4-6188eac70849', 'a21eaea8-bc12-4f39-bdd4-58afa6c08fe3']
+Precision Score: 0.6000
+Recall Score: 0.7500
+------------------------------------------------------------
+Question 7: Given the severe noise constraints and limited qubit resources of current NISQ hardware, justify the selection of architectural patterns and algorithmic design strategies  to ensure the reliability of the quantum module.
+Expected ids:   ['742911f7-48c2-411c-b2a8-e2373edc42e6', 'dc516842-73e2-4d58-ac8c-5026af550fbc', '1ec7da78-1b56-42bf-8a9f-679bee0173fb', '84511b75-2ea7-4a53-b801-17c680a598e8', 'b5580812-ccb3-4a63-857d-934b1fb4473a']
+Retrieved ids: ['b5580812-ccb3-4a63-857d-934b1fb4473a', 'dc516842-73e2-4d58-ac8c-5026af550fbc', '742911f7-48c2-411c-b2a8-e2373edc42e6', '84511b75-2ea7-4a53-b801-17c680a598e8', '1ec7da78-1b56-42bf-8a9f-679bee0173fb']
+Precision Score: 1.0000
+Recall Score: 1.0000
+------------------------------------------------------------
+Question 8: Given an iterative quantum-classical functionality, how should this iterative execution be supported?
+Expected ids:   ['a916bddb-7121-41d7-ad51-32fac41c03bc', '5476ad9a-858e-4dd7-b616-e009c5ed2a96', 'c08237fc-cb3c-4913-acf1-51148e83622e', '2f32df70-219d-4b01-be46-264505450790', 'b90b95fa-5c9f-4e45-8fc8-f98ef4891700']
+Retrieved ids: ['a916bddb-7121-41d7-ad51-32fac41c03bc', '2f32df70-219d-4b01-be46-264505450790', '5476ad9a-858e-4dd7-b616-e009c5ed2a96', 'c08237fc-cb3c-4913-acf1-51148e83622e', '6fdd0c37-1459-486a-9926-60073222ca25']
+Precision Score: 0.8000
+Recall Score: 0.8000
+------------------------------------------------------------
+Question 9: Given a classical application, what architectural patterns should be used to decouple quantum functionalities and expose them as scalable?
+Expected ids:   ['c2ed0961-0efc-4970-ad8f-ec4f43c6ae20', '46cb230d-b368-452c-a8d3-4c41bd65c0af', '3d8789de-29d0-47a1-8e22-cb8ca8257e06', '7d239b16-fd00-45be-a901-9e9915997f19', '164b12bc-f78f-48b6-a0fd-362da6f3fbd2']
+Retrieved ids: ['39a222cd-7a0f-4e98-8ec1-d87b5da9d270', 'c2ed0961-0efc-4970-ad8f-ec4f43c6ae20', '164b12bc-f78f-48b6-a0fd-362da6f3fbd2', '3d8789de-29d0-47a1-8e22-cb8ca8257e06', '46cb230d-b368-452c-a8d3-4c41bd65c0af']
+Precision Score: 0.8000
+Recall Score: 0.8000
+------------------------------------------------------------
+Question 10: Given a distributed classical software architecture, what is the desirable hybrid execution architecture for quantum functionalities that require deploying Readout Error Mitigation
+Expected ids:   ['b5873345-ccc4-4169-a4bb-a5051f61c26e', '3ee01c50-ad2b-4bb0-a078-bd8739b79205', 'a5a60513-50fd-478b-8bb0-2dc25be4b3d6', '54d9010f-a73f-4a56-8293-7df55df0182f', '26bf6c5b-6a1b-4894-b9bb-f87cfb8b2dc3']
+Retrieved ids: ['26bf6c5b-6a1b-4894-b9bb-f87cfb8b2dc3', 'a5a60513-50fd-478b-8bb0-2dc25be4b3d6', 'bb4970dc-b0f5-40ca-95ac-0fb3282ba6fd', '54d9010f-a73f-4a56-8293-7df55df0182f', 'b5873345-ccc4-4169-a4bb-a5051f61c26e']
+Precision Score: 0.8000
+Recall Score: 0.8000
+------------------------------------------------------------
+Average Precision (ID-Based Context Precision): 0.8000
+Average Recall (ID-Based Context Recall): 0.8500

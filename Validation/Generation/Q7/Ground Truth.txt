@@ -1,0 +1,13 @@
+In the current NISQ era, where quantum processors suffer from severe noise and limited qubit counts, true Fault-Tolerant Quantum Computing (FTQC) and Quantum Error Correction (QEC) are physically unviable. Therefore, ensuring the reliability of a quantum module requires delegating the burden of error management to the classical software architecture through Quantum Error Mitigation (QEM) and strict workload partitioning.
+
+Algorithmic Design Strategies:
+Rather than relying on theoretical fault tolerance, the algorithmic design must employ hardware-efficient ansatzes and circuit cutting techniques to keep the circuit depth shallow and within the coherence time of current qubits. Reliability is achieved by applying QEM techniques, such as Zero-Noise Extrapolation (ZNE) or Readout Error Mitigation, which probabilistically reduce noise without requiring additional physical qubits.
+
+Architectural Patterns:
+To implement these strategies without tightly coupling the core logic to hardware constraints, two primary architectural patterns must be applied:
+
+    Strict Classical-Quantum Partitioning (Hybrid Orchestration): Using patterns like Meta-Solving, the architecture must maintain a hybrid loop where the classical CPU acts as the heavy orchestrator. The classical layer handles parameter optimization, state preparation, and solver selection, treating the QPU strictly as a coprocessor for short, specific subroutines.
+
+    Reliability Decorator Pattern: To integrate QEM transparently, the architecture should use the Reliability Decorator Design Pattern. This classical wrapper intercepts the quantum circuit before it is sent to the QPU, programmatically modifies it for mitigation (e.g., identity insertion for ZNE), and then handles the classical post-processing of the noisy measurements. This ensures the core quantum algorithm remains pristine and hardware-agnostic.
+
+By combining classical hybrid orchestration with dynamic decorator-based mitigation, the architecture ensures reliable execution on today's <1000 qubit processors while maintaining modularity for future hardware iterations.
